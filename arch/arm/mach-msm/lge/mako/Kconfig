@@ -1,0 +1,24 @@
+config BOARD_HEADER_FILE
+	string "LGE board specific header file name"
+	default ""
+
+config MACH_APQ8064_MAKO
+	depends on ARCH_APQ8064
+	select MACH_LGE
+	bool "MSM8064 MAKO"
+	help
+	  Support for the LGE MAKO device.
+
+config MACH_APQ8064_J1A
+	depends on ARCH_APQ8064
+	select MACH_LGE
+	bool "APQ8064 J1A"
+	help
+	  Support for the LGE Fusion3 J1A(AT&T) device.
+
+config LGE_PM_PWM_LED
+	depends on ARCH_APQ8064
+	select MACH_LGE
+	bool "LGE_PM_PWM_LED"
+	help
+	  Support LGE_PM_PWM_LED.
