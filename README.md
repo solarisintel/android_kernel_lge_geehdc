@@ -1,4 +1,4 @@
-#  KDDI/Docomo Optimus G (LGL21/L01E) oreot Kernel for crDroid 8.0 / aex-8.1
+#  KDDI/Docomo Optimus G (LGL21/L01E) oreo Kernel for crDroid 8.0 / aex-8.1
 
 
 2020/03/17 
