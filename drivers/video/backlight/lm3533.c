@@ -121,13 +121,13 @@ static int lm3533_write_reg(struct i2c_client *client,
 		client->addr, 0, 2, buf
 	};
 
+	if (val > 230) // backlight value too high
+            val = 230; 
+
 	buf[0] = reg;
 	buf[1] = val;
 
         debug_msg[0] = '\0';
-
-	if (val > 230) // backlight value too high
-            return 0; 
 
 	err = i2c_transfer(client->adapter, &msg, 1);
 	if (err < 0) {
