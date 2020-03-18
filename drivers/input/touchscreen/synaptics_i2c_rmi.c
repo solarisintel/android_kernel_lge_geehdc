@@ -643,8 +643,7 @@ static const struct i2c_device_id synaptics_ts_id[] = {
 static struct i2c_driver synaptics_ts_driver = {
 	.probe		= synaptics_ts_probe,
 	.remove		= synaptics_ts_remove,
-//#ifndef CONFIG_HAS_EARLYSUSPEND
-#ifndef 0 
+#ifndef CONFIG_HAS_EARLYSUSPEND
 	.suspend	= synaptics_ts_suspend,
 	.resume		= synaptics_ts_resume,
 #endif
