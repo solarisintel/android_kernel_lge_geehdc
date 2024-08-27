@@ -1,4 +1,4 @@
-#  KDDI/Docomo Optimus G (LGL21/L01E) oreo Kernel
+#  KDDI/Docomo Optimus G (LGL21/L01E) Oreo Kernel
 2020/03/17 dmesgのエラーメッセージ解消  
 
 修正したファイル  
