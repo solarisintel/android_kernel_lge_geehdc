@@ -9,12 +9,12 @@ kernel/timer/alarmtimer.c         ... suspendエラーを解消
 drivers/leds/leds-pm8xxx.c        ... ledドライバのエラーを解消  
 arch/arm/mach-msm/qdsp6v2/audio_amrwbplus.c ... DEBUG_FSなしのコンパイルエラー修正  
 ```   
-defconfig の見直し v500 8.1 のdefconfigを参考
+defconfig の見直し、v500 8.1 のdefconfigを参考にした
 ```
 -CONFIG_PERSISTENT_TRACER=y  
 +# CONFIG_PERSISTENT_TRACER is not set  
 ```  
-... これをすると DEBUG_FSが無効になり、コンパイルエラーが多発する
+上記の設定をするとDEBUG_FSが無効になり、コンパイルエラーが多発する
 ```
 -# CONFIG_ANDROID_RAM_CONSOLE is not set
 +CONFIG_ANDROID_RAM_CONSOLE=y
