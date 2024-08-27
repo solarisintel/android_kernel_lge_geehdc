@@ -3,10 +3,10 @@
 
 修正したファイル  
 ```
-drivers/staging/prima/            ... WLANドライバをmakoに入れ替え  
-drivers/video/backlight/lm3533.c  ... 明るさのMAX値チェックを挿入  
-kernel/timer/alarmtimer.c         ... suspendエラーを解消  
-drivers/leds/leds-pm8xxx.c        ... ledドライバのエラーを解消  
+drivers/staging/prima/                      ... WLANドライバをmakoに入れ替え  
+drivers/video/backlight/lm3533.c            ... 明るさのMAX値チェックを挿入  
+kernel/timer/alarmtimer.c                   ... suspendエラーを解消  
+drivers/leds/leds-pm8xxx.c                  ... ledドライバのエラーを解消  
 arch/arm/mach-msm/qdsp6v2/audio_amrwbplus.c ... DEBUG_FSなしのコンパイルエラー修正  
 ```   
 defconfig の見直し、v500 8.1 のdefconfigを参考にした
